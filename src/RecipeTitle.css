@@ -1,0 +1,16 @@
+.recipeTitle{
+    cursor: pointer;
+}
+
+.recipeTitle__img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.recipeTitle__name{
+    max-width: 200px;
+    text-align: center;
+    margin: 12px 0px;
+}
