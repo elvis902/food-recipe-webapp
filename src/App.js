@@ -5,10 +5,13 @@ import RecipeTitle from './RecipeTitle';
 
 function App() {
 
+  const APP_ID = "enter_your_app_id"
+  const APP_KEY = "enter_your_app_key"
+  
   const [query, setQuery] = useState("chicken")
   const [recipes, setRecipes] = useState([])
   const [healthLabel, setHealthLabel] = useState("alcohol-free")
-  const url = `https://api.edamam.com/api/recipes/v2/?type=public&q=${query}&app_id=1d7b988d&app_key=beca06d40e63056dd8d0e8b5c242f40c&health=${healthLabel}`
+  const url = `https://api.edamam.com/api/recipes/v2/?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&health=${healthLabel}`
   const getRecipe = () => {
      axios.get(url)
      .then(response => {
